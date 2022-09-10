@@ -65,3 +65,12 @@ create table tbl_itempedido (
 	 foreign key(i_cod_produto)
 	 references tbl_produto(cod_produto)
 );
+
+# Tabela de logs (Armazena as ações cometidas dentro do bd)
+create table tbl_log(
+	id_log int not null auto_increment primary key,
+    usuario varchar(50) not null,
+    dt_log date not null,
+    hora time not null
+)
+
