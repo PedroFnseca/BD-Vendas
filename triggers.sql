@@ -26,7 +26,7 @@ end $
 # operação realizada, sendo: “INSERÇÃO”, “ATUALIZAÇÃO” ou “EXCLUSÃO” e
 # outro campo que armazene a tabela que está sendo realizadas as ações.
 alter table tbl_log
-	add operacao enum('INSERT', 'UPDATE', 'DELETE'),
+	add operacao varchar(45),
     add tbl varchar(45);
 
 
