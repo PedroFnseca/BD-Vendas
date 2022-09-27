@@ -92,6 +92,7 @@ delimiter $
 # procedimento armazenado criado nessa atividade no item b).
 drop trigger trg_instCliente;
 
+delimiter $
 create trigger trg_instCliente before insert 
 	on tbl_pedido
     for each row
